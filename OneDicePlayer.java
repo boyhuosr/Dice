@@ -28,23 +28,21 @@ public static void main(String[] args){
         
         if (scan.hasNext()) {
             str = scan.nextInt();}
-        else{str = 10000;}
+        else{str = 50000;}
         	scan.close();
     	
-	
-
-		for(int i = 0; i < str; i++){
-			dice.roll();
+	for(int i = 0; i < str; i++){
+		dice.roll();
 			
-		switch(dice.getCurrentValue()){
-			case 1: Amount[0]++;break;
-			case 2: Amount[1]++;break;
-			case 3: Amount[2]++;break;
-			case 4: Amount[3]++;break;
-			case 5: Amount[4]++;break;
-			case 6: Amount[5]++;
+	switch(dice.getCurrentValue()){
+		case 1: Amount[0]++;break;
+		case 2: Amount[1]++;break;
+		case 3: Amount[2]++;break;
+		case 4: Amount[3]++;break;
+		case 5: Amount[4]++;break;
+		case 6: Amount[5]++;
 			}
 		}
-		System.out.println("Result: " + Amount[0]+" "+Amount[1]+" "+Amount[2]+" "+Amount[3]+" "+Amount[4]+" "+Amount[5]);
+	System.out.println("Result: " + Amount[0]+" "+Amount[1]+" "+Amount[2]+" "+Amount[3]+" "+Amount[4]+" "+Amount[5]);
 	}
 }
