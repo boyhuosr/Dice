@@ -27,11 +27,9 @@ public static void main(String[] args){
         
         if (scan.hasNext()) {
             str = scan.nextInt();}
-        else{str = 10000;}
+        else{str = 50000;}
         	scan.close();
-    	
 	
-
 		for(int i = 0; i < str; i++){
 			dice1.roll();
 			dice2.roll();
