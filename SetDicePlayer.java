@@ -13,8 +13,6 @@ public class SetDicePlayer{
 	}
 
 public static void main(String[] args){
-		
-		
 		int str;
 		int n;
 		int value;
@@ -43,7 +41,7 @@ public static void main(String[] args){
 		for(int i=0; i<n; i++){
 			diceNumber[i]=0;
 		}
-//
+
 		for(int j = 0; j < str; j++){
 			value=0;
 			for(int i=0; i<n; i++){
@@ -56,9 +54,7 @@ public static void main(String[] args){
 			Amount[value-n]++;
 			}
 
-		for(int i=0; i<5*n+1; i++){System.out.println( Amount[i]); }
-		
-		
+		for(int i=0; i<5*n+1; i++){System.out.println( Amount[i]); }	
 			
 	}
 }
